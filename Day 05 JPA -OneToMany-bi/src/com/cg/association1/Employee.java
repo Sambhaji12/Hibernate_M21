@@ -13,19 +13,19 @@ import javax.persistence.ManyToOne;
 
 import javax.persistence.Table;
 @Entity
-@Table (name = "Emp")
+@Table (name = "Employee1")
 public class Employee implements Serializable  
 {
 	private static final long serialVersionUID=1L;
 	@Id
 	@GeneratedValue(strategy =GenerationType.AUTO)
 	private int id;
-	@Column(name ="Department_name")
+	@Column(name ="DepartmentName")
 	private String name;
 	private double salary;
 	
 	@ManyToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="Department")
+	@JoinColumn(name="DepartmentID")
 	
 	private Department dept;
 
