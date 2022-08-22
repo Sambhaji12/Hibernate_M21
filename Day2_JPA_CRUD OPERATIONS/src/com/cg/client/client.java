@@ -11,10 +11,10 @@ public class client {
 		EmployeeService es= new EmployeeServiceImpl();
 		employee emp=new employee();
 		
-		// create operation 
-		/*emp.setId(1001);
+		//create operation 
+		emp.setId(1001);
 		emp.setName("ram");
-		es.addEmployee(emp);*/
+		es.addEmployee(emp);
 		
 		// reterive data 
 		
@@ -23,9 +23,9 @@ public class client {
 		System.out.println("Emp Name:"+emp.getName());*/
 		
 		//update the recored 
-		emp=es.getEmployeeId(1001);
-		emp.setName("sanket");
-		es.updateEmployee(emp);
+		//emp=es.getEmployeeId(1001);
+		//emp.setName("sanket");
+		//es.updateEmployee(emp);
 		
 		//we have updated the recore after the selection 
 		
@@ -34,9 +34,9 @@ public class client {
 		System.out.println("Emp Name:"+emp.getName());*/
 		
 		// at this brealpoint ,record is removed 
-		emp=es.getEmployeeId(1001);
-		es.removeEmployee(emp);
-		System.out.println("End of program /Life cycle completed.....");
+		//emp=es.getEmployeeId(1001);
+		//es.removeEmployee(emp);
+		//System.out.println("End of program /Life cycle completed.....");
 		
 		}
 	}
