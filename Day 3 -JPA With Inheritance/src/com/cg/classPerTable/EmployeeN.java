@@ -1,4 +1,4 @@
-package com.cg.classpertable;
+package com.cg.classPerTable;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
